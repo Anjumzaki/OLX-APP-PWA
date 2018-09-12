@@ -1,0 +1,157 @@
+.home-page {
+  margin:auto;
+  background-color: white;
+  width: 70%;
+}
+.arrow--up,
+.arrow--down,
+.arrow--left,
+.arrow--right {
+    min-height: 40px;
+    /*min height of DIV should be set to at least 2x the width of the arrow*/
+    background: #EB3C00;
+    color: white;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.arrow--up:after {
+    /*arrow added to arrow--up DIV*/
+    content: '';
+    display: block;
+    position: absolute;
+    top: -40px;
+    /*should be set to -border-width x 2 */
+    left: 10%;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent white transparent;
+    /*border color should be same as div div background color*/
+    border-style: solid;
+    border-width: 20px;
+}
+
+.searchdiv{
+  background-color: #b0cfda;
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+.searchdiv input{
+  width: 30%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+
+}
+.btn-search {
+  background: #2965be;
+  border-radius: 5px;
+  color: #fff;
+  border-width: 3px;
+  border-style: solid;
+  border-color:  #fff;
+  width: 15%;
+  font-size: 18px;
+  padding: 5px;
+  margin-left: 2%;
+}
+.btn-search:link, .btn-search:visited {
+  color: #fff;
+}
+.btn-search:active, .btn-search:hover {
+  background: #1c1c1c;
+  color: #fff;
+}
+.sform1{
+  width: 50% !important;
+  margin-left: 2%;
+}
+
+.forcities{
+  position: absolute;
+  z-index: 99999 !important;
+  background: white;
+  width: 70%;
+  color: blue;
+  text-align: left;
+  font-size: 20px !important;
+  padding: 20px;
+  
+}
+.displayno{
+  display: none;
+ 
+}
+.forcitiesinner{
+  display: flex;
+  background: #f3f3f3;
+}
+.cities{
+  width: 21%;
+  padding: 1%;
+  text-align: center !important;
+  font-size: 14px !important; 
+} 
+.hider
+{
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width:1600%;
+    height: 250%;
+    margin-top: -800px; /*set to a negative number 1/2 of your height*/
+    margin-left: -500px; /*set to a negative number 1/2 of your width*/
+    /*
+    z- index must be lower than pop up box
+   */
+    z-index: 9999;
+   background-color:Black;
+   //for transparency
+   opacity:0.6;
+}
+
+.sform{
+  background: white url('/location.png') left no-repeat;
+  padding-left: 30px !important;
+  background-size: 2.5rem 2.5rem;
+}
+.sform1{
+  background: white url('/search.png') left no-repeat;
+  padding-left: 30px !important;
+  background-size: 2.5rem 2.5rem;
+}
+.flex{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.catog{
+  display: flex;
+  flex-wrap: wrap;
+  width: 65%;
+}
+.add{
+  width: 30%;
+}
+.catog div img{
+ width: 100px;
+ height: 100px;
+ padding-bottom: 10px;
+ padding-top: 10px;
+}
+.catog div  span{
+  vertical-align: text-bottom;
+  position: relative;
+  right: 43%;
+}
+.catog div{
+  width: 33%;
+  min-width: 100px;
+}
+.add{
+  width: 30%;
+  height: 400px;
+  background: lavenderblush;
+  
+}
